@@ -1,0 +1,12 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./client/themes/index.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes";
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+      {/* <ToastContainer /> */}
+      <RouterProvider router={router} />
+  </React.StrictMode>
+);
